@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website- Amit Shukla</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrclick-er"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="logo.png" class="logo" />
+
+          <ul id="sidemenu">
+            <li><a  class="click-btn" href="#header">Home</a></li>
+            <li><a  class="click-btn"href="#About">About</a></li>
+            <li><a  class="click-btn"href="#achievments">Achievements</a></li>
+            <li><a class="click-btn" href="#extracuricullar">Extracurricular-Activities</a></li>
+            <li><a class="click-btn" href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi,I'm <span>Amit</span></h1>
+          <h1>"Passion fuels purpose."</h1>
+        </div>
+      </div>
+    </div>
+
+    <!---About-->
+
+    <div id="About">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="profile1.jpg" alt="Amit's Profile Pic" />
+          </div>
+          <div class="about-col2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I’m a Computer Science and Engineering undergraduate at SRM
+              University, AP, with a strong passion for Artificial Intelligence,
+              Machine Learning, and Data Science. I’ve explored C, HTML, CSS,
+              JavaScript, and SQL, and continuously exploring emerging
+              technologies to sharpen my skills. I’ve participated in tech
+              programs like the INTEL AI Boot Camp, TCS ESG Virtual Experience,
+              and Ashoka University’s Young Scholar Program, where I deepened my
+              understanding of AI-driven solutions. I’m eager to build
+              innovative, impactful projects and grow as a future-ready software
+              developer and data-driven problem solver.
+            </p>
+
+            <div class="tabtitles">
+              <p
+                class="tablinks ActiveLinks"
+                onclick="openTab('education',event)"
+              >
+                Education
+              </p>
+              <p class="tablinks" onclick="openTab('skills',event)">Skills</p>
+              <p class="tablinks" onclick="openTab('hobby',event)">Hobby</p>
+            </div>
+            <div class="tabcontents ActiveTab" id="education">
+              <ul>
+                <li>
+                  <span>Bachelor of Computer Science and Engineering</span>
+                  <br />SRM University, AP<br />
+                  Vijayawada, Andhra Pradesh
+                </li>
+                <li>
+                  <span>Senior Seconday Education</span> <br />VidyaGyan
+                  LeaderShip Academy<br />
+                  Sitapur,Uttar Pradesh
+                </li>
+                <li>
+                  <span>Higher Seconday Education</span>
+                  <br />
+                  VidyaGyan LeaderShip Academy
+                  <br />
+                  Sitapur,Uttar Pradesh
+                </li>
+              </ul>
+            </div>
+            <div class="tabcontents" id="skills">
+              <ul>
+                <li><i class="fa-solid fa-code"></i> C</li>
+
+                <li><i class="fa-brands fa-html5"></i> HTML</li>
+                <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                <li><i class="fa-brands fa-js-square"></i> JavaScript</li>
+                <li><i class="fa-brands fa-git-alt"></i> Git</li>
+                <li><i class="fa-brands fa-github"></i> GitHub</li>
+              </ul>
+            </div>
+            <div class="tabcontents" id="hobby">
+              <ul>
+                <li>
+                  <span>Tech Exploration</span> <br />Deeply passionate about
+                  leveraging emerging technologies such as Artificial
+                  Intelligence, Machine Learning, and Full-Stack Web Development
+                  to build innovative, real-world solutions<br />
+                </li>
+                <li>
+                  <span>Athletics & Competitive Sports</span> <br />An active
+                  sports enthusiast with a strong background in competitive
+                  athletics. I’ve participated at school, district, state, and
+                  national levels, which has instilled in me discipline,
+                  teamwork, and leadership skills.<br />
+                </li>
+                <li>
+                  <span>Mentoring & Teaching</span>
+                  <br />
+                  Committed to sharing knowledge through mentoring peers and
+                  younger students. I actively engage in teaching coding
+                  fundamentals,and helping others build confidence in both
+                  academics and personal development.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="achievments">
+      <div class="container">
+        <h1 class="subtitle">My Achievements</h1>
+        <div class="achievemetlist">
+          <div>
+            <i class="fa-solid fa-lightbulb"></i>
+            <h2>Young Scholors Programme</h2>
+            <p>
+              Awarded a full scholarship to this prestigious pre-college
+              program, where I explored robotics, attended insightful lectures,
+              and engaged with esteemed faculty. The experience deepened my
+              passion for technology and computer science.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-globe"></i>
+            <h2>Venetian ESummer</h2>
+            <p>
+              Explored topics in environmental conservation, sustainability, and
+              entrepreneurship while connecting with global entrepreneurs and
+              students. The program fostered a strong international community
+              passionate about Italian culture and innovation.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-medal"></i>
+            <h2>Gold Medal – CBSE National Athletic Meet 2022–23</h2>
+            <p>
+              From school to national level, this journey of intense training
+              and competition culminated in a gold medal at the CBSE Nationals.
+              A proud moment that reflects perseverance, teamwork, and a passion
+              for athletics.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--------------ExtraCurricullar--------------->
+
+    <div id="extracuricullar">
+      <div class="container">
+        <h1 class="subtitle">Extracurricular - Activities</h1>
+        <div class="curricularlist">
+          <div class="curricular">
+            <img class="sks" src="sksh.jpg" alt="Siksha Cerificate" />
+            <div class="layer">
+              <h3>Siksha Anubandh Program</h3>
+              <p>
+                Volunteered at GGIC Sitapur, delivering interactive sessions on
+                nutrition, hygiene, and illness prevention. Also trained rural
+                residents in small business skills to support health and
+                economic empowerment.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="curricular">
+            <img src="nashamukti.PNG" alt="nashamukti Certifiate" />
+            <div class="layer">
+              <h3>NashaMukti Awareness Program</h3>
+              <p>
+                Led awareness campaigns and workshops under the Nasha Mukti
+                Program to combat substance abuse. Promoted prevention and
+                supported individuals toward a drug-free community.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="curricular">
+            <img src="panipahr.PNG" alt="panipahar Certifiate" />
+            <div class="layer">
+              <h3>Pani Pahar</h3>
+              <p>
+                Explored sustainable water management and the importance of the
+                Ganga through an engaging, eco-focused program.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!------------Conatact----------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contactleft">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>itsamitshukla01@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-volume"></i>9569823439</p>
+            <div class="social-icons">
+              <a
+              target="_main" href="https://www.linkedin.com/in/amit-shukla-5825bb254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a  target="_main" href="https://github.com/Amit-Shukla07"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                target="_main"  href="https://www.instagram.com/amitshukla6847?igsh=MWVtM2tuOGlhcTZjdg=="
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+            <a href="Resume Amit.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contactright">
+            <form>
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="7"
+                placeholder="Enter Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Amit Shukla. Made with ❤️ All rights reserved</p>
+      </div>
+    </div>
+  </body>
+  <script src="pf.js"></script>
+</html>
